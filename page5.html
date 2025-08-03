@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Float та Clear</title>
+  <style>
+    .float-left { float: left; width: 150px; height: 100px; background: coral; margin-right: 10px; }
+    .float-right { float: right; width: 150px; height: 100px; background: lightgreen; margin-left: 10px; }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="clearfix">
+    <div class="float-left">Left</div>
+    <div class="float-right">Right</div>
+    <p>Цей текст обтікає блоки, поки не використаний clear або clearfix.</p>
+  </div>
+  <div style="clear: both;">Цей блок починається з нового рядка.</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Позиціонування</title>
+  <style>
+    .static { position: static; background: #ddd; padding: 10px; }
+    .relative { position: relative; top: 10px; left: 10px; background: pink; }
+    .absolute { position: absolute; top: 30px; left: 30px; background: lightblue; padding: 5px; }
+    .fixed { position: fixed; top: 0; left: 0; background: orange; padding: 10px; }
+    .sticky { position: sticky; top: 0; background: yellow; padding: 10px; }
+  </style>
+</head>
+<body style="height: 1500px;">
+  <div class="static">Static</div>
+  <div class="relative">Relative</div>
+  <div class="absolute">Absolute (плаває відносно body)</div>
+  <div class="fixed">Fixed (завжди видно)</div>
+  <div class="sticky">Sticky (прилипає при скролі)</div>
+  <p style="margin-top: 200px;">Скроль нижче, щоб побачити ефект fixed і sticky</p>
+</body>
+</html>
